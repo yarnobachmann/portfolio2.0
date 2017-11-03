@@ -1,0 +1,530 @@
+html,
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 100%;
+    width: 100%;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    font-size: 20px;
+    font-family: "yarno";
+    letter-spacing: 1px;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.spacing-top {
+    padding-top: 50px;
+}
+
+.spacing-bottom {
+    padding-bottom: 50px;
+}
+
+.section1 h1 {
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.section1 p {
+    margin-top: 40px;
+}
+
+.section3 h1 {
+    margin-top: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.section3 p {
+    margin-top: 40px;
+}
+
+.laptop {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.bruh {
+    text-align: center;
+}
+
+.one-third.column {
+    width: 30.6666666667%;
+}
+
+.column {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    margin-left: 2%
+}
+
+.mobile {
+    width: 50%;
+}
+
+.tablet {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.section1 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #ebebeb;
+}
+
+.section3 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #fff;
+}
+
+.section2 {
+    height: 50px;
+    background-color: #555;
+}
+
+#naam {
+    font-family: yarnologo;
+    font-size: 30px;
+}
+
+.navbar {
+    margin-bottom: -3px;
+    border: -2px;
+}
+
+.copy {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family:sans-serif;
+    font-size: 14px;
+    color: white;
+}
+/*
+Fade content bs-carousel with hero headers
+Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
+Image credits: unsplash.com
+*/
+
+/********************************/
+/*       Fade Bs-carousel       */
+/********************************/
+.fade-carousel {
+    position: relative;
+    height: 50vh;
+}
+.fade-carousel .carousel-inner .item {
+    height: 50vh;
+}
+.fade-carousel .carousel-indicators > li {
+    margin: 0 2px;
+    background-color: #f40000;
+    border-color: #f40000;
+    opacity: .7;
+    width: 15px;
+    height: 15px;
+}
+
+.carousel-indicators {
+    z-index: 1;
+}
+.fade-carousel .carousel-indicators > li.active {
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+}
+
+/********************************/
+/*          Hero Headers        */
+/********************************/
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
+}
+.hero h1 {
+    font-size: 6em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 15s all ease-in-out .2s;
+       -moz-transition: 15s all ease-in-out .2s;
+        -ms-transition: 15s all ease-in-out .2s;
+         -o-transition: 15s all ease-in-out .2s;
+            transition: 15s all ease-in-out .2s;
+}
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 15s all ease-in-out .2s;
+       -moz-transition: 15s all ease-in-out .2s;
+        -ms-transition: 15s all ease-in-out .2s;
+         -o-transition: 15s all ease-in-out .2s;
+            transition: 15s all ease-in-out .2s;
+}
+
+/********************************/
+/*          Custom Buttons      */
+/********************************/
+.btn.btn-lg {padding: 10px 40px;}
+.btn.btn-hero,
+.btn.btn-hero:hover,
+.btn.btn-hero:focus {
+    color: #f5f5f5;
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+    outline: none;
+    margin: 20px auto;
+}
+
+/********************************/
+/*       Slides backgrounds     */
+/********************************/
+.fade-carousel .slides .slide-1,
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3 {
+  height: 50vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.fade-carousel .slides .slide-1 {
+  background-image: url(../img/test2.jpg);
+}
+
+.fade-carousel .slides .slide-2 {
+  background-image: url(../img/test.jpg);
+}
+.fade-carousel .slides .slide-3 {
+  background-image: url(../img/test3.jpg);
+}
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (min-width: 980px){
+    .hero { width: 980px; }
+    .bruh{
+        max-width: 80%;
+        margin: 0 auto;
+        }
+    .laptop {
+            width: 300px;
+    }
+}
+@media screen and (max-width: 980px){
+    .hero h1 { font-size: 4em; }
+
+    .laptop {
+        width: 300px;
+    }
+
+    .one-third.column {
+        width: 100%;
+        margin-left: 0%
+    }
+
+    p {
+         font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        background-position: 53% 50%;
+    }
+}
+
+@font-face {
+    font-family: yarno;
+    src: url(../fonts/Baloo-Regular.ttf);
+}
+
+@font-face {
+    font-family: yarnologo;
+    src: url(../fonts/Zoon-Hoot.otf);
+}
+
+@font-face {
+    font-family: backto;
+    src: url(../fonts/PressStart2P.ttf);
+}
+
+.backto {
+  font-family: backto;
+  font-size: 10px;
+}
+
+.backto:hover {
+  color: orange;
+}
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 289px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    opacity: 1;
+}
+
+#myImg2 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 289px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5px;
+}
+
+#myImg3 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 289px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5px;
+}
+
+#myImg4 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 289px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#myImg:hover {opacity: 0.8; cursor: -webkit-zoom-in; cursor: -moz-zoom-in;}
+#myImg2:hover {opacity: 0.8; cursor: -webkit-zoom-in; cursor: -moz-zoom-in;}
+#myImg3:hover {opacity: 0.8; cursor: -webkit-zoom-in; cursor: -moz-zoom-in;}
+#myImg4:hover {opacity: 0.8; cursor: -webkit-zoom-in; cursor: -moz-zoom-in;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal:hover {
+  cursor: -webkit-zoom-out; cursor: -moz-zoom-out;
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    z-index: 16;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 90%;
+    }
+}
+
+.modal-content {
+  border: none;
+}
+
+
+@media only screen and (max-width: 990px){
+    .hidden-klein {
+        visibility: hidden;
+        position: absolute;
+    }
+}
+
+@media only screen and (min-width: 980px){
+    .hidden-groot {
+        visibility: hidden;
+        position: absolute;
+    }
+}
+
+.padding-p {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 50%;
+  text-align: center;
+}
+
+.padding-p a{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 50%
+}
+
+.btn {
+  color: white;
+  border: 0px;
+  background-color: #ff0000;
+}
+
+.btn:hover {
+  background-color: #cc0000;
+  color: white;
+}
+
+.btn:active {
+  color: white;
+  background-color: #cc0000;
+}
+
+#linktext {
+  color: #ff0000;
+}
+
+#linktext:hover {
+  color: #cc0000;
+  text-decoration: none;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.text {
+  font-family:  "yarno";
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.modalnr1 .middle:hover{
+  opacity: 1;
+}
+
+@media only screen and (max-width: 400px){
+  .thumbnail.right-caption > img {
+      max-width: 300px;
+  }
+  .footer-center {
+    position: absolute;
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 550px){
+  #btn {
+    font-size: 8px;
+  }
+}
