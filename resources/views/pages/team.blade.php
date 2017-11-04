@@ -1,5 +1,7 @@
 @extends('main')
 
+@section('title', '| Team')
+
 
 @section('code')
 
@@ -19,20 +21,20 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="{{ url('/') }}"><span id="naam">Yarno</span></a>
+        <a class="navbar-brand" href="{{ url('/') }}" draggable="false"><span id="naam">Yarno</span></a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li><a href="{{ url('portfolio') }}">Portfolio</a></li>
-          <li class="active"><a href="{{ url('team') }}">Team <span class="sr-only">(current)</span></a></li>
-          <li><a href="{{ url('gallery') }}">Gallery</a></li>
-          <li><a href="{{ url('contact') }}">Contact</a></li>
+          <li><a href="{{ url('portfolio') }}" draggable="false">Portfolio</a></li>
+          <li class="active"><a href="{{ url('team') }}" draggable="false">Team <span class="sr-only">(current)</span></a></li>
+          <li><a href="{{ url('gallery') }}" draggable="false">Gallery</a></li>
+          <li><a href="{{ url('contact') }}" draggable="false">Contact</a></li>
 
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="{{ url('ronay') }}"><i class="fa fa-youtube-play" aria-hidden="true"></i>Ronay</a></li>
+            <li><a href="{{ url('ronay') }}" draggable="false"><i class="fa fa-youtube-play" aria-hidden="true"></i>Ronay</a></li>
 
         </ul>
       </div><!-- /.navbar-collapse -->
@@ -46,7 +48,7 @@
   <div class="container ">
     <div class="col-md-12 yarno">
       <div class="thumbnail right-caption span4">
-      <img src="img/avatar/test1.jpeg" alt="yarno">
+      <img src="img/avatar/test1.jpeg" alt="yarno" draggable="false">
       <div class="caption">
         <h4>Yarno Bachmann <span class="taak">web developer<span></h4>
         <p>Ik ben Yarno Bachmann , Ik studeer applicatie ontwikkeling en ben voornamelijk bezig met het php framework laravel .
@@ -59,14 +61,14 @@
             <li>PHP</li>
             <li>Mysql</li>
           </ul>
-        <p><a href="{{ url('portfolio') }}" class="btn" role="button">Portfolio</a> </p>
+        <p><a href="{{ url('portfolio') }}" class="btn" role="button" draggable="false">Portfolio</a> </p>
       </div>
     </div>
     </div>
 
     <div class="col-md-12 collin">
       <div class="thumbnail right-caption span4">
-      <img src="img/avatar/test2.jpg" alt="Collin">
+      <img src="img/avatar/test2.jpg" alt="Collin" draggable="false">
       <div class="caption">
         <h4>Collin Lambers <span class="taak">web developer<span></h4>
         <p>Ik ben Collin Lambers, Ik studeer applicatie ontwikkeling en ben veel bezig met beveiliging. Ik maak veel websites in Wordpress waaronder ook een website voor de eerstejaar stage.
@@ -78,7 +80,7 @@
              <li>PHP</li>
              <li>CSS</li>
            </ul>
-        <p><a href="http://collinsportfolio.ga/" target="_blank" class="btn" role="button">Portfolio</a> </p>
+        <p><a href="http://collinsportfolio.ga/" target="_blank" class="btn" role="button" draggable="false">Portfolio</a> </p>
       </div>
    </div>
  </div>

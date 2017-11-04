@@ -20,20 +20,20 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="{{ url('/') }}"><span id="naamlog">Yarno</span></a>
+      <a class="navbar-brand" href="{{ url('/') }}" draggable="false"><span id="naamlog">Yarno</span></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="{{ url('portfolio') }}">Portfolio</a></li>
-        <li><a href="{{ url('team') }}">Team</a></li>
-        <li><a href="{{ url('gallery') }}">Gallery</a></li>
-        <li  class="active"><a href="{{ url('contact') }}">Contact <span class="sr-only">(current)</span></a></li>
+        <li><a href="{{ url('portfolio') }}" draggable="false">Portfolio</a></li>
+        <li><a href="{{ url('team') }}" draggable="false">Team</a></li>
+        <li><a href="{{ url('gallery') }}" draggable="false">Gallery</a></li>
+        <li  class="active"><a href="{{ url('contact') }}" draggable="false">Contact <span class="sr-only">(current)</span></a></li>
 
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="{{ url('ronay') }}"><i class="fa fa-youtube-play" aria-hidden="true"></i>Ronay</a></li>
+        <li><a href="{{ url('ronay') }}" draggable="false"><i class="fa fa-youtube-play" aria-hidden="true"></i>Ronay</a></li>
 
       </ul>
     </div><!-- /.navbar-collapse -->

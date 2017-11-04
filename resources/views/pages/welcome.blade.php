@@ -24,10 +24,10 @@
         <hr>
 
         <ul class="social">
-            <li><a href="https://www.facebook.com/Yarno-1409931245726550/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="https://plus.google.com/u/0/104927242142232708032" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-            <li><a href="https://www.instagram.com/yarnobachmann/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/jarno-bachmann-3b1022137/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://www.facebook.com/Yarno-1409931245726550/" target="_blank" draggable="false"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://plus.google.com/u/0/104927242142232708032" target="_blank" draggable="false"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="https://www.instagram.com/yarnobachmann/" target="_blank" draggable="false"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/jarno-bachmann-3b1022137/" target="_blank" draggable="false"><i class="fa fa-linkedin"></i></a></li>
         </ul>
         <nav class="menu">
           <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open">
@@ -37,12 +37,12 @@
             <span class="lines line-3"></span>
           </label>
 
-          <a href="#" class="menu-item item-1"></a>
-          <a href="{{ url('contact') }}" class="menu-item item-2"><i class="fa fa-envelope mail" aria-hidden="true"></i><h6 id="menu_text">contact</h6></a>
-          <a href="{{ url('team') }}" class="menu-item item-3"><i class="fa fa-users team" aria-hidden="true"></i><h6 id="menu_text">team</h6></a>
-          <a href="#" class="menu-item item-4"></a>
-          <a href="#" class="menu-item item-5"></a>
-          <a href="{{ url('portfolio') }}" class="menu-item item-6"><i class="fa fa-user portfolio" aria-hidden="true"></i><h6 id="menu_text">portfolio</h6></a>
+          <a href="#" class="menu-item item-1" draggable="false"></a>
+          <a href="{{ url('contact') }}" class="menu-item item-2" draggable="false"><i class="fa fa-envelope mail" aria-hidden="true"></i><h6 id="menu_text">contact</h6></a>
+          <a href="{{ url('team') }}" class="menu-item item-3" draggable="false"><i class="fa fa-users team" aria-hidden="true"></i><h6 id="menu_text">team</h6></a>
+          <a href="#" class="menu-item item-4" draggable="false"></a>
+          <a href="#" class="menu-item item-5" draggable="false"></a>
+          <a href="{{ url('portfolio') }}" class="menu-item item-6" draggable="false"><i class="fa fa-user portfolio" aria-hidden="true"></i><h6 id="menu_text">portfolio</h6></a>
         </nav>
 
     </div>

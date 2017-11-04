@@ -1,5 +1,6 @@
 @extends('main')
 
+@section('title', '| Gallery')
 
 @section('code')
 
@@ -23,19 +24,19 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="{{ url('/') }}"><span id="naam">Yarno</span></a>
+        <a class="navbar-brand" href="{{ url('/') }}" draggable="false"><span id="naam">Yarno</span></a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li><a href="{{ url('portfolio') }}">Portfolio </a></li>
-          <li><a href="{{ url('team') }}">Team</a></li>
-          <li class="active"><a href="{{ url('gallery') }}">Gallery<span class="sr-only">(current)</span></a></li>
-          <li><a href="{{ url('contact') }}">Contact</a></li>
+          <li><a href="{{ url('portfolio') }}" draggable="false">Portfolio </a></li>
+          <li><a href="{{ url('team') }}" draggable="false">Team</a></li>
+          <li class="active"><a href="{{ url('gallery') }}" draggable="false">Gallery<span class="sr-only">(current)</span></a></li>
+          <li><a href="{{ url('contact') }}" draggable="false">Contact</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="{{ url('ronay') }}"><i class="fa fa-youtube-play" aria-hidden="true"></i>Ronay</a></li>
+            <li><a href="{{ url('ronay') }}" draggable="false"><i class="fa fa-youtube-play" aria-hidden="true"></i>Ronay</a></li>
 
         </ul>
       </div><!-- /.navbar-collapse -->
@@ -47,9 +48,9 @@
         <ul id="og-grid" class="og-grid">
               @foreach($images as $image)
           <li class="">
-            <a href="#" data-largesrc="/storage/{{ $image->image }}" data-title="{{ $image->title }}" data-description="{{ $image->description }}">
+            <a href="#" data-largesrc="/storage/{{ $image->image }}" data-title="{{ $image->title }}" data-description="{{ $image->description }}" draggable="false">
               <div class="img-container">
-             <img src="/storage/{{ $image->image }}" alt="#" class="img-responsive styleimg featured-image" style="object-fit: cover;"/>
+             <img src="/storage/{{ $image->image }}" alt="#" class="img-responsive styleimg featured-image" draggable="false" style="object-fit: cover;"/>
             </div>
             </a>
           </li>

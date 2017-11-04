@@ -20,20 +20,20 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="{{ url('/') }}"><span id="naam">Yarno</span></a>
+        <a class="navbar-brand" href="{{ url('/') }}" draggable="false"><span id="naam">Yarno</span></a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="{{ url('portfolio') }}">Portfolio <span class="sr-only">(current)</span></a></li>
-          <li><a href="{{ url('team') }}">Team</a></li>
-          <li><a href="{{ url('gallery') }}">Gallery</a></li>
-          <li><a href="{{ url('contact') }}">Contact</a></li>
+          <li class="active"><a href="{{ url('portfolio') }}" draggable="false">Portfolio <span class="sr-only">(current)</span></a></li>
+          <li><a href="{{ url('team') }}" draggable="false">Team</a></li>
+          <li><a href="{{ url('gallery') }}" draggable="false">Gallery</a></li>
+          <li><a href="{{ url('contact') }}" draggable="false">Contact</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="{{ url('80s') }}"><span class="backto" >back to the 80s</span></a></li>
-            <li><a href="{{ url('ronay') }}"><i class="fa fa-youtube-play" aria-hidden="true"></i>Ronay</a></li>
+            <li><a href="{{ url('80s') }}" draggable="false"><span class="backto" >back to the 80s</span></a></li>
+            <li><a href="{{ url('ronay') }}" draggable="false"><i class="fa fa-youtube-play" aria-hidden="true"></i>Ronay</a></li>
 
         </ul>
       </div><!-- /.navbar-collapse -->
@@ -78,11 +78,11 @@
           </div>
       </div>
     </div>
-     <a class="left carousel-control" href="#bs-carousel" data-slide="prev">
+     <a class="left carousel-control" href="#bs-carousel" data-slide="prev" draggable="false">
       <span class="glyphicon glyphicon-chevron-left"></span>
       <span class="sr-only">Previous</span>
     </a>
-    <a class="right carousel-control" href="#bs-carousel" data-slide="next">
+    <a class="right carousel-control" href="#bs-carousel" data-slide="next" draggable="false">
       <span class="glyphicon glyphicon-chevron-right"></span>
       <span class="sr-only">Next</span>
     </a>
@@ -119,16 +119,16 @@
     <div class="row section3">
       <h1 class="spacing-bottom">Certificaten</h1>
       <div class="col-md-3 modalnr1">
-        <img class="img-responsive" id="myImg" src="img/modals/online-marketing.png" alt="online marketing">
+        <img class="img-responsive" id="myImg" src="img/modals/online-marketing.png" alt="online marketing" draggable="false">
       </div>
       <div class="col-md-3 modalnr1">
-        <img class="img-responsive" id="myImg2" src="img/modals/security.png" alt="security">
+        <img class="img-responsive" id="myImg2" src="img/modals/security.png" alt="security" draggable="false">
       </div>
       <div class="col-md-3 modalnr1">
-        <img class="img-responsive" id="myImg3" src="img/modals/veiligInternet.png" alt="veilig internet">
+        <img class="img-responsive" id="myImg3" src="img/modals/veiligInternet.png" alt="veilig internet" draggable="false">
       </div>
       <div class="col-md-3 modalnr1">
-        <img class="img-responsive" id="myImg4" src="img/modals/veiligInternet-plus.png" alt="veilig internet plus">
+        <img class="img-responsive" id="myImg4" src="img/modals/veiligInternet-plus.png" alt="veilig internet plus" draggable="false">
       </div>
 
       <div id="myModal" class="modal">
@@ -138,13 +138,13 @@
 
         <!-- Modal Content (The Image) -->
 
-        <img class="modal-content" id="img01">
+        <img class="modal-content" id="img01" draggable="false">
 
-        <img class="modal-content" id="img02">
+        <img class="modal-content" id="img02" draggable="false">
 
-        <img class="modal-content" id="img03">
+        <img class="modal-content" id="img03" draggable="false">
 
-        <img class="modal-content" id="img04">
+        <img class="modal-content" id="img04" draggable="false">
 
         <!-- Modal Caption (Image Text) -->
         <div id="caption"></div>
@@ -155,21 +155,21 @@
   <div class="container-fluid section1">
      <div class="row bruh">
        <div class="col-md-4 hidden-klein">
-          <img class="laptop" src="{{ asset('img/screens/wordpresscollin.png') }}" alt="" >
+          <img class="laptop" src="{{ asset('img/screens/wordpresscollin.png') }}" alt="" draggable="false" >
         </div>
 
          <div class="col-md-4 hidden-klein">
-            <img class="laptop" src="{{ asset('img/screens/klink.png') }}" alt="" >
+            <img class="laptop" src="{{ asset('img/screens/klink.png') }}" alt=""  draggable="false">
          </div>
 
           <div class="col-md-4 hidden-klein">
-            <img class="laptop" src="{{ asset('img/screens/screens.png') }}" alt="" >
+            <img class="laptop" src="{{ asset('img/screens/screens.png') }}" alt="" draggable="false">
           </div>
       </div>
       <div class="row bruh spacing-top">
 
         <div class="col-md-4 hidden-groot">
-           <img class="laptop" src="{{ asset('img/screens/wordpresscollin.png') }}" alt="" >
+           <img class="laptop" src="{{ asset('img/screens/wordpresscollin.png') }}" alt="" draggable="false">
          </div>
 
         <div class="one-third column">
@@ -181,7 +181,7 @@
         </div>
 
         <div class="col-md-4 hidden-groot">
-           <img class="laptop" src="{{ asset('img/screens/klink.png') }}" alt="" >
+           <img class="laptop" src="{{ asset('img/screens/klink.png') }}" alt="" draggable="false">
         </div>
 
         <div class="one-third column">
@@ -193,7 +193,7 @@
         </div>
 
         <div class="col-md-4 hidden-groot">
-          <img class="laptop" src="{{ asset('img/screens/screens.png') }}" alt="" >
+          <img class="laptop" src="{{ asset('img/screens/screens.png') }}" alt="" draggable="false">
         </div>
 
         <div class="one-third column">
@@ -217,7 +217,7 @@
        Ben je geïnteresseerd stuur dan gerust een e-mail.
       </p>
 
-      <p class="padding-p"><a href="{{ url('contact') }}" id="btn" class="btn" role="button">stuur een e-mail</a> </p>
+      <p class="padding-p"><a href="{{ url('contact') }}" id="btn" class="btn" role="button" draggable="false">stuur een e-mail</a> </p>
 
     </div>
   </div>
