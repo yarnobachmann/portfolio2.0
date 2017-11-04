@@ -97,7 +97,7 @@
       </div>
      <div class="col-sm-10 panel panel-default">
       <div class="panel-heading">Pixelmon series</div>
-        <div class="panel-body"><iframe src="https://www.youtube.com/embed/videoseries?list=PLy5TpRxYLFP7QuhyDHHwmgStaFPJb0sXH" frameborder="0" allowfullscreen></iframe></div>
+        <div class="panel-body"><iframe src="https://www.youtube.com/embed/NRZ95A497Yk" frameborder="0" allowfullscreen></iframe></div>
      </div>
     </div>
     <div class="col-sm-2 sidenav">

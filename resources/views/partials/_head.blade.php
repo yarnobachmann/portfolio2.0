@@ -1,12 +1,12 @@
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Yarno's Portfolio @yield('title')</title>
 
 <link rel="icon" type="image/png" href="{{ asset('favicon.ico') }}"/>
 
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+
 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 

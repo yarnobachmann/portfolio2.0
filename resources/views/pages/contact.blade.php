@@ -4,7 +4,7 @@
 
 @section('code')
 
-<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+<link rel="stylesheet" href="{{ asset('css/contact.css') }}">
 
 
 @endsection

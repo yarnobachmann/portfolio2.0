@@ -2,26 +2,10 @@
 
 @section('code')
 
-<link rel="stylesheet" href="{{ asset('css/styles.css') }}">
 
-<script type="text/javascript" src="{{ asset('/js/jquery.flipping_text.js') }}" ></script>
-<script>
- $(document).ready(function(){
-  	  $(".intro").flipping_text({
-  	    tickerTime: 50,
-  	    tickerCount: 5,
-        customRandomChar: "!@#$%^&*"
-  	  });
-  });
+<link rel="stylesheet" href="{{ asset('css/homepage.css') }}">
 
-</script>
-<script>
-$(document).ready(function(){
-    $("#menuopenknop").click(function(){
-        $("h6").toggle(500);
-    });
-});
-</script>
+
 @endsection
 
 @section('header')
@@ -64,6 +48,26 @@ $(document).ready(function(){
     </div>
 
 </div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="{{ asset('/js/jquery.flipping_text.js') }}" ></script>
+<script>
+ $(document).ready(function(){
+  	  $(".intro").flipping_text({
+  	    tickerTime: 50,
+  	    tickerCount: 5,
+        customRandomChar: "!@#$%^&*"
+  	  });
+  });
+
+</script>
+<script>
+$(document).ready(function(){
+    $("#menuopenknop").click(function(){
+        $("h6").toggle(500);
+    });
+});
+</script>
+
 @endsection
 
 @section('content')

@@ -4,7 +4,6 @@
 @section('code')
 
 <link rel="stylesheet" href="{{ asset('css/team.css') }}">
-<link rel="stylesheet" href="css/footer-distributed.css">
 
 @endsection
 

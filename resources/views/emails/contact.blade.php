@@ -1,21 +1,21 @@
 
-@extends('beautymail::templates.sunny')
+@extends('beautymail::templates.widgets')
 
 @section('content')
 
-    <img src="http://www.yarnobachmann.nl/img/logo/logo.png" alt="logo">
+	@include('beautymail::templates.widgets.articleStart')
 
-    @include ('beautymail::templates.sunny.heading' , [
-        'heading' => 'Hallo!',
-        'level' => 'h1',
-    ]) <p>{{ $naam }}</p>
+		<h4 class="secondary"><strong>{{ $naam }}</strong></h4>
+		<p>Gestuurd via {{ $email }}</p>
 
-    @include('beautymail::templates.sunny.contentStart')
+	@include('beautymail::templates.widgets.articleEnd')
 
-        <p>{{ $bericht }}</p>
-        <br>
-        <p>Gestuurd via {{ $email }}</p>
 
-    @include('beautymail::templates.sunny.contentEnd')
-          
+	@include('beautymail::templates.widgets.newfeatureStart')
+
+		<h4 class="secondary"><strong>{{ $bericht }}</strong></h4>
+		
+
+	@include('beautymail::templates.widgets.newfeatureEnd')
+
 @stop

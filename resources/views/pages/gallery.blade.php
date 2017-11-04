@@ -8,6 +8,7 @@
 <link rel="stylesheet" type="text/css" href="/css/component.css" />
 <script src="/js/modernizr.custom.js"></script>
 
+
 @endsection
 
 @section('content')
@@ -34,7 +35,6 @@
           <li><a href="{{ url('contact') }}">Contact</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="{{ url('80s') }}"><span class="backto" >back to the 80s</span></a></li>
             <li><a href="{{ url('ronay') }}"><i class="fa fa-youtube-play" aria-hidden="true"></i>Ronay</a></li>
 
         </ul>
@@ -42,21 +42,15 @@
     </div><!-- /.container-fluid -->
   </nav>
 
-
-
-
-
-
-
-
-
-    <div class="container">
+   <div class="container">
       <div class="main">
         <ul id="og-grid" class="og-grid">
               @foreach($images as $image)
-          <li>
+          <li class="">
             <a href="#" data-largesrc="/storage/{{ $image->image }}" data-title="{{ $image->title }}" data-description="{{ $image->description }}">
-              <img src="/storage/{{ $image->image }}" alt="#" class="img-responsive" style="height: 350px; width: 460px; object-fit: cover;"/>
+              <div class="img-container">
+             <img src="/storage/{{ $image->image }}" alt="#" class="img-responsive styleimg featured-image" style="object-fit: cover;"/>
+            </div>
             </a>
           </li>
           @endforeach
@@ -65,6 +59,7 @@
     </div><!-- /container -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="/js/grid.js"></script>
+
     <script>
       $(function() {
         Grid.init();
@@ -77,8 +72,25 @@
         } );
       });
     </script>
+    <script type="text/javascript">
+    var userAgent, ieReg, ie;
+    userAgent = window.navigator.userAgent;
+    ieReg = /msie|Trident.*rv[ :]*11\./gi;
+    ie = ieReg.test(userAgent);
+
+    if(ie) {
+      $(".img-container").each(function () {
+        var $container = $(this),
+      imgUrl = $container.find("img").prop("src");
+      if (imgUrl) {
+    $container.css("backgroundImage", 'url(' + imgUrl + ')').addClass("custom-object-fit");
+  }
+});
+}
+
+    </script>
 <br>
 <br>
-  @include('partials._footer')
+  @include('partials._footer2')
 
   @endsection

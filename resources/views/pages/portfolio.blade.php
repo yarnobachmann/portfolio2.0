@@ -3,7 +3,7 @@
 
 @section('code')
 
-<link rel="stylesheet" href="{{ asset('css/styling.css') }}">
+<link rel="stylesheet" href="{{ asset('css/portfolio.css') }}">
 
 
 @endsection
@@ -117,32 +117,18 @@
 
   <div class="container">
     <div class="row section3">
-
       <h1 class="spacing-bottom">Certificaten</h1>
-
       <div class="col-md-3 modalnr1">
         <img class="img-responsive" id="myImg" src="img/modals/online-marketing.png" alt="online marketing">
-        <div class="middle">
-          <div class="text">Online marketing</div>
-        </div>
       </div>
       <div class="col-md-3 modalnr1">
         <img class="img-responsive" id="myImg2" src="img/modals/security.png" alt="security">
-        <div class="middle">
-          <div class="text">Security</div>
-        </div>
       </div>
       <div class="col-md-3 modalnr1">
         <img class="img-responsive" id="myImg3" src="img/modals/veiligInternet.png" alt="veilig internet">
-        <div class="middle">
-          <div class="text">Veilig internet</div>
-        </div>
       </div>
       <div class="col-md-3 modalnr1">
         <img class="img-responsive" id="myImg4" src="img/modals/veiligInternet-plus.png" alt="veilig internet plus">
-        <div class="middle">
-          <div class="text">Veilig internet plus</div>
-        </div>
       </div>
 
       <div id="myModal" class="modal">
@@ -167,7 +153,7 @@
     </div>
   </div>
   <div class="container-fluid section1">
-     <div class="row">
+     <div class="row bruh">
        <div class="col-md-4 hidden-klein">
           <img class="laptop" src="{{ asset('img/screens/wordpresscollin.png') }}" alt="" >
         </div>

@@ -2,9 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="/css/80.css">
+    <style>
+    img[alt="www.000webhost.com"] {
+        display: none;
+    }
+    </style>
   </head>
   <body>
     <audio autoplay loop id="myaudio">
